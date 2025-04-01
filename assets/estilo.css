@@ -1,0 +1,145 @@
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff9800;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ff9800;
+    color: white;
+    font-family: 'Pirata One';
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 80px;
+}
+
+header p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 100px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.cartao {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.cartao:nth-child(even) {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.cartao:hover {
+    transform: scale(1.10); 
+    background-color: #ff9800;
+    color: #f4f4f4;
+}
+
+.cartao .detalhes {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(255, 152, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.cartao::before {
+    content: "✨";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2em;
+}
+
+.cartao::after {
+    content: "👨🏻‍🍳";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    font-size: 1.2em;
+}
+
+.cartao:hover .detalhes {
+    display: block;
+}
+
+.cartao:hover::before{
+    content: "🍽";
+}
+
+.cartao:hover::after {
+    opacity: 1;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}

@@ -1,0 +1,119 @@
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff9800;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ff9800;
+    color: white;
+    font-family: 'Pirata One';
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 80px;
+}
+
+header p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.sobre {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.sobre h1 {
+    font-family: 'Pirata One';
+    font-size: 36px;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.sobre .descricao {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.sobre .descricao h2 {
+    font-family: 'Pirata One';
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sobre .descricao p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.sobre-main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+body {
+    padding-bottom: 80px; 
+}
+

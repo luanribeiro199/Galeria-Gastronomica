@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Galeria Gastronômica</title>
+    <link rel="stylesheet" href="./assets/contato.css">
+    <link rel="icon" type="image/png" href="./assets/chefe-de-cozinha.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Galeria Gastronômica</h1>
+        <p>Entre em contato conosco!</p>
+    </header>
+
+    <div class="contato">
+        <div class="contato-main">
+            <h1>Contato</h1>
+            <p>Tem alguma dúvida ou sugestão? Fique à vontade para nos enviar uma mensagem!</p>
+
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Seção Redes Sociais, WhatsApp e Telefone -->
+            <div class="contato-info">
+                <h2>Conecte-se Conosco</h2>
+                <p>Estamos presentes nas principais redes sociais e também por WhatsApp. Fique à vontade para entrar em contato conosco!</p>
+                
+                <div class="icones">
+                    <a href="https://www.facebook.com" target="_blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="tel:+551234567890" class="telefone">
+                        <i class="fas fa-phone-alt"></i> (12) 3623-2016
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Galeria Gastronômica. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
